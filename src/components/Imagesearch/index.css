@@ -1,0 +1,92 @@
+/* Main app container */
+.App {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  /* Heading styling */
+  h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Search bar styling */
+  .input-group {
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .form-control {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border: 1px solid #ddd;
+  }
+  
+  .btn-primary {
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    background-color: #0066cc;
+    color: #ffffff;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #004d99;
+  }
+  
+  /* Grid layout for images */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  
+  /* Image card styling */
+  .col-md-3, .col-sm-6 {
+    flex: 1 1 22%; /* Maintain 4 images per row on desktop */
+    max-width: 22%;
+    position: relative;
+  }
+  
+  .img-fluid {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .img-fluid:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 992px) {
+    .col-md-3 {
+      max-width: 45%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .col-sm-6 {
+      max-width: 100%;
+    }
+  }
+  
